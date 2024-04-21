@@ -1,5 +1,5 @@
 {
-  "name": "src",
+  "name": "valkey-mini-demo",
   "version": "1.0.0",
   "description": "A valkey demo for Cloud Native Guatemala",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Salvador Lopez",
   "license": "ISC",
   "dependencies": {
     "@valkey/client": "^1.0.0",
