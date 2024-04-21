@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+ valkey:
+    image: valkey/valkey:7.2.5-alpine3.19
+    ports:
+      - "6739:6379"
+    volumes:
+      - cache:/data
+    networks:
+      - project_network
+ app:
+    image: cngt-valkey-demo
+    build:
+      context: .
+    ports:
+      - "9871:9871"
+    environment:
+      PORT: 9871
+      REDIS_PORT: 6379
+      REDIS_HOST: valkey
+      REDIS_INDEX: 0
+    networks:
+      - project_network
+volumes:
+ cache:
+    driver: local
+networks:
+ project_network:
+    name: project_network
+
