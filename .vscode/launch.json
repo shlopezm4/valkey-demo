@@ -12,9 +12,9 @@
       "program": "${workspaceFolder}/app/src/index.js",
       "env": {
         "PORT": "",
-        "REDIS_PORT": "",
-        "REDIS_HOST": "",
-        "REDIS_INDEX": ""
+        "VALKEY_PORT": "",
+        "VALKEY_HOST": "",
+        "VALKEY_INDEX": ""
       }
     }
   ]

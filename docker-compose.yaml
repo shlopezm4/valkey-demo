@@ -16,9 +16,9 @@ services:
       - "9871:9871"
     environment:
       PORT: 9871
-      REDIS_PORT: 6379
-      REDIS_HOST: valkey
-      REDIS_INDEX: 0
+      VALKEY_PORT: 6379
+      VALKEY_HOST: valkey
+      VALKEY_INDEX: 0
     networks:
       - project_network
 volumes:
