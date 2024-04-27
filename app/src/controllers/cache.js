@@ -24,7 +24,7 @@ const getController = async (req, res, next) => {
   } catch (error) {
     return res
       .status(500)
-      .send(errorResponse(`Error setting a HASH key!`, error.message));
+      .send(errorResponse(`Error getting a key!`, error.message));
   }
 };
 
